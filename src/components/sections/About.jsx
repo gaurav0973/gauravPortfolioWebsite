@@ -19,7 +19,8 @@ const About = () => {
   return (
     <section id="about" className="bg-[#EAE1DC] py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 border-b-2 border-gray-400 inline-block text-gray-800">
+        <h2 className="text-3xl font-bold mb-8 inline-block text-gray-800">
+          <span className="text-[#FF6B6B] text-3xl">01. </span>
           About Me
         </h2>
 
