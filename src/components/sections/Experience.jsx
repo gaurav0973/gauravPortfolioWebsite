@@ -24,7 +24,7 @@ const jobsData = [
       "Collaborated with cross-functional teams.",
     ],
   },
-]
+];
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -32,57 +32,61 @@ const Experience = () => {
   return (
     <section id="experience" className="bg-[#EAE1DC] py-20 px-6">
       <div className="max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold text-gray-900 mb-12 flex items-center">
-        <span className="text-red-500 text-3xl mr-2">02.</span> My Professional Experiences
-        <div className="ml-4 w-1/3 h-[1px] bg-gray-400"></div>
-      </h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-12 flex items-center">
+          <span className="text-red-500 text-3xl mr-2">02.</span> My
+          Professional Experiences
+          <div className="ml-4 w-1/3 h-[1px] bg-gray-400"></div>
+        </h2>
 
-      <div className="flex flex-col md:flex-row">
-        {/* Tabs */}
-        <div className="flex md:flex-col overflow-x-auto md:w-1/4 space-y-2">
-          {jobsData.map((job, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveTab(index)}
-              className={`text-left px-4 py-2 font-mono text-sm rounded-md ${
-                activeTab === index
-                  ? "bg-white text-red-500 font-bold shadow-md"
-                  : "text-gray-500 hover:text-red-500"
-              }`}
-            >
-              {job.company}
-            </button>
-          ))}
-        </div>
-
-        {/* Content */}
-        <div className="md:w-3/4 p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-1">
-            {jobsData[activeTab].title}{" "}
-            <span className="text-red-500">@</span>{" "}
-            <a
-              href={jobsData[activeTab].url}
-              className="text-red-500 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {jobsData[activeTab].company}
-            </a>
-          </h3>
-          <p className="text-sm font-mono text-gray-500 mb-6">
-            {jobsData[activeTab].range}
-          </p>
-
-          <ul className="list-none space-y-4">
-            {jobsData[activeTab].description.map((item, idx) => (
-              <li key={idx} className="flex items-start text-gray-600 text-[15px]">
-                <span className="text-red-400 mr-3 mt-1">🔴</span>
-                <p>{item}</p>
-              </li>
+        <div className="flex flex-col md:flex-row">
+          {/* Tabs */}
+          <div className="flex md:flex-col overflow-x-auto md:w-1/4 space-y-2">
+            {jobsData.map((job, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`text-left px-4 py-2 font-mono text-sm rounded-md ${
+                  activeTab === index
+                    ? "bg-white text-red-500 font-bold shadow-md"
+                    : "text-gray-500 hover:text-red-500"
+                }`}
+              >
+                {job.company}
+              </button>
             ))}
-          </ul>
+          </div>
+
+          {/* Content */}
+          <div className="md:w-3/4 p-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-1">
+              {jobsData[activeTab].title}{" "}
+              <span className="text-red-500">@</span>{" "}
+              <a
+                href={jobsData[activeTab].url}
+                className="text-red-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {jobsData[activeTab].company}
+              </a>
+            </h3>
+            <p className="text-sm font-mono text-gray-500 mb-6">
+              {jobsData[activeTab].range}
+            </p>
+
+            <ul className="list-none space-y-4">
+              {jobsData[activeTab].description.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="flex items-start text-gray-600 text-[15px]"
+                >
+                  <span className="text-red-400 mr-3 mt-1">🔴</span>
+                  <p>{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
