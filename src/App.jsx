@@ -1,8 +1,9 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import SocialSidebar from './components/SocialSideBar'
-import Hero from './components/sections/Hero'
-import About from './components/sections/About'
+import Navbar from './components/Navbar,jsx'
+
+import Hero from './components/sections/Hero.jsx'
+import About from './components/sections/About.jsx'
+import SocialSidebar from '../components/SocialSidebar.jsx'
 
 function App() {
   return (
