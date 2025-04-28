@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6"
 import { SiLeetcode } from "react-icons/si"
 import { SiGeeksforgeeks } from "react-icons/si"
 
-const SocialSidebar = () => {
+const SocialBarLeft = () => {
   return (
     <div id='social-side-bar' className="hidden lg:flex flex-col items-center fixed left-0 top-0 h-screen w-16 bg-[#EAE1DC] justify-center space-y-6 z-40">
 
@@ -42,4 +42,4 @@ const SocialSidebar = () => {
   );
 };
 
-export default SocialSidebar;
+export default SocialBarLeft;
