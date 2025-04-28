@@ -9,16 +9,17 @@ const About = () => {
     'PostgresSQL(Prisma ORM)',
     'Express.js',
     'MongoDB(Mongoose ORM)',
-    'Docker',
+    'Docker and Docker Compose',
     'Python',
     'SQL',
     'Git & GitHub',
-    'Tailwind CSS'
+    'Tailwind CSS',
   ];
 
   return (
     <section id="about" className="bg-[#EAE1DC] py-20 px-6">
       <div className="max-w-4xl mx-auto">
+        
         <h2 className="text-3xl font-bold mb-8 inline-block text-gray-800">
           <span className="text-[#FF6B6B] text-3xl">01. </span>
           About Me
@@ -29,14 +30,10 @@ const About = () => {
           {/* Text Section */}
           <div className="md:col-span-3">
             <p className="mb-4 text-gray-700">
-              Hello! I'm Gaurav, a passionate software developer with a keen interest in building
-              innovative solutions. My journey in programming began during my college years,
-              and I've been hooked ever since.
+              Hello! I'm Gaurav, a passionate software developer with a keen interest in building innovative solutions.
             </p>
-
             <p className="mb-4 text-gray-700">
-              Currently, I'm focused on developing full-stack applications and exploring
-              new technologies. I love working with modern web technologies and creating
+              Currently, I'm focused on developing full-stack applications and exploring new AI technologies. I love working with modern web technologies and creating
               seamless user experiences.
             </p>
 
